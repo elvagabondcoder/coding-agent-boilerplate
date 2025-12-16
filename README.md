@@ -50,4 +50,5 @@ When adding features or making changes:
 ### Support
 
 For Claude Code issues: https://support.claude.com
-For project issues: [Add your issue tracker URL]
+
+For project issues: https://github.com/elvagabondcoder/coding-agent-boilerplate/issues
