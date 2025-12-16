@@ -1,0 +1,52 @@
+# Claude Code Onboarding Template .gitignore
+
+# Dependencies
+node_modules/
+vendor/
+venv/
+
+# Build outputs
+dist/
+build/
+out/
+*.o
+*.so
+*.dylib
+*.dll
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Logs
+*.log
+logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Testing
+coverage/
+.nyc_output/
+*.test.cache
+
+# OS files
+Thumbs.db
+.DS_Store
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# Claude Code specific (if needed)
+# .claude/cache/

@@ -1,0 +1,53 @@
+# Claude Code Configuration
+
+# Model preferences
+model: claude-sonnet-4-5
+
+# Context files (relative to project root)
+# Claude will read these files to understand your project
+context_files:
+  - context/PROJECT_OVERVIEW.md
+  - context/ARCHITECTURE.md
+  - context/DEVELOPMENT_GUIDELINES.md
+  - context/API_CONVENTIONS.md
+  - context/DEPENDENCIES.md
+  - README.md
+  - package.json
+
+# Important directories
+# Claude will have access to these directories
+include_dirs:
+  - src/
+  - tests/
+  - scripts/
+
+# Files/directories to exclude
+exclude_patterns:
+  - node_modules/
+  - dist/
+  - build/
+  - coverage/
+  - .git/
+  - "*.log"
+  - ".env*"
+
+# Custom instructions for Claude
+# These will be included in every interaction
+instructions: |
+  You are working on a production codebase. Always:
+  1. Follow the guidelines in context/DEVELOPMENT_GUIDELINES.md
+  2. Match the architecture patterns in context/ARCHITECTURE.md
+  3. Write tests for new functionality
+  4. Update documentation when changing functionality
+  5. Ask for clarification if requirements are ambiguous
+  6. Consider security implications of changes
+  7. Validate input data appropriately
+  8. Handle errors gracefully with proper logging
+
+# Auto-run commands after code changes (optional)
+# post_change_commands:
+#   - npm run lint
+#   - npm test
+
+# Maximum tokens for context (optional)
+# max_context_tokens: 100000
